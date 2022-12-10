@@ -16,16 +16,16 @@ class Aplication():
         self.container4 = Frame(janela)
         self.container4.grid(row=1, column=0)
 
-        self.label1 = Label(self.container1, text="Sorteador")        
+        self.label1 = Label(self.container1, text="Você deseja sortear 10 números?", font = 20)        
         self.label1.pack()
 
         self.label2 = Label(self.container1, text="")
         self.label2.pack()
        
-        self.btn1 = Button(self.container3, text= "Sorteador" ,command=self.mudaNumero)
+        self.btn1 = Button(self.container3, text= "Sortear" ,command=self.mudaNumero, font=15,foreground="white", background="black")
         self.btn1.pack()
 
-        self.btn2 = Button(self.container3, text= "Finalizar" ,command=janela.destroy)
+        self.btn2 = Button(self.container3, text= "Não" ,command=janela.destroy, font=15,foreground="white", background="black")
         self.btn2.pack()
 
     def mudaNumero(self):
